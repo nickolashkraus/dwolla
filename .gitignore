@@ -1,0 +1,15 @@
+# Unix
+*.swp
+
+# OS X
+.DS_Store
+
+# Python
+*.pyc
+*.egg-info/
+dist/
+cover/
+.coverage/
+
+# Dwolla
+logs.txt
