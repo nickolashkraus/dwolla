@@ -16,7 +16,7 @@ class CliTestCase(BaseTestCase):
         result = self.runner.invoke(cli, ['--version'])
         self.assertIs(None, result.exception)
         self.assertEqual(0, result.exit_code)
-        self.assertEqual('Dwolla\n', result.output)
+        self.assertEqual('Dwolla 1.0.0\n', result.output)
 
     def test_cli_no_subcommand(self):
         result = self.runner.invoke(cli)
