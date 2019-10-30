@@ -9,7 +9,7 @@
 *.egg-info/
 dist/
 cover/
-.coverage/
+.coverage
 
 # Dwolla
 logs.txt
