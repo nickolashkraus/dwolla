@@ -1,1 +1,5 @@
-"""A Python package for a technical interview problem."""
+"""Top-level package for statikos."""
+
+__author__ = """Nickolas Kraus"""
+__email__ = 'NickHKraus@gmail.com'
+__version__ = '0.1.0'
