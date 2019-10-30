@@ -14,7 +14,7 @@ def read(filename):
 dependencies = read('requirements.txt').split()
 setup(
     name='dwolla',
-    version='0.1',
+    version='0.1.0',
     description='A Python package for a technical interview problem',
     url='https://github.com/NickolasHKraus/dwolla',
     author='Nickolas Kraus <NickHKraus@gmail.com>',
