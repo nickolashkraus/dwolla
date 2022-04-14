@@ -1,10 +1,10 @@
-# Dwolla
+# [Dwolla](https://www.dwolla.com)
 
 [![Travis CI](https://img.shields.io/travis/com/NickolasHKraus/dwolla)](https://travis-ci.org/NickolasHKraus/dwolla)
 [![Codecov](https://img.shields.io/codecov/c/github/NickolasHKraus/dwolla)](https://codecov.io/gh/NickolasHKraus/dwolla)
-[![MIT License](https://img.shields.io/github/license/NickolasHKraus/dwolla?color=blue)](https://github.com/NickolasHKraus/dwolla/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/NickolasHKraus/dwolla/blob/master/LICENSE)
 
-A Python package for a technical interview problem.
+Solution for a technical interview project.
 
 ## Installation
 
