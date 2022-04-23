@@ -4,7 +4,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/NickolasHKraus/dwolla)](https://codecov.io/gh/NickolasHKraus/dwolla)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/NickolasHKraus/dwolla/blob/master/LICENSE)
 
-Solution for a technical interview project.
+Solution for the technical interview project
 
 ## Installation
 
