@@ -16,7 +16,7 @@ setup(
     name='dwolla',
     version='1.0.1',
     description='A Python package for a technical interview problem',
-    url='https://github.com/NickolasHKraus/dwolla',
+    url='https://github.com/nickolashkraus/dwolla',
     author='Nickolas Kraus <0x@nickolaskraus.io>',
     install_requires=dependencies,
     packages=find_packages(exclude=['*.test', '*.test.*', 'test.*', 'test']),

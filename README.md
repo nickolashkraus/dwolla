@@ -1,8 +1,8 @@
 # [Dwolla](https://www.dwolla.com)
 
-[![Travis CI](https://img.shields.io/travis/com/NickolasHKraus/dwolla)](https://travis-ci.org/NickolasHKraus/dwolla)
-[![Codecov](https://img.shields.io/codecov/c/github/NickolasHKraus/dwolla)](https://codecov.io/gh/NickolasHKraus/dwolla)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/NickolasHKraus/dwolla/blob/master/LICENSE)
+[![Travis CI](https://img.shields.io/travis/com/nickolashkraus/dwolla)](https://travis-ci.org/nickolashkraus/dwolla)
+[![Codecov](https://img.shields.io/codecov/c/github/nickolashkraus/dwolla)](https://codecov.io/gh/nickolashkraus/dwolla)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nickolashkraus/dwolla/blob/master/LICENSE)
 
 Solution for the technical interview project
 
