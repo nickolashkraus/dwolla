@@ -1,9 +1,5 @@
 # [Dwolla](https://www.dwolla.com)
 
-[![Travis CI](https://img.shields.io/travis/com/nickolashkraus/dwolla)](https://travis-ci.org/nickolashkraus/dwolla)
-[![Codecov](https://img.shields.io/codecov/c/github/nickolashkraus/dwolla)](https://codecov.io/gh/nickolashkraus/dwolla)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nickolashkraus/dwolla/blob/master/LICENSE)
-
 Solution for the technical interview project
 
 ## Installation
@@ -14,7 +10,7 @@ Make a virtualenv:
 mkvirtualenv dwolla
 ```
 
-**Note**: The `dwolla` Python Package uses Python 3.7.
+**Note**: The `dwolla` Python Package uses Python 3.13.
 
 Install `dwolla`:
 
@@ -73,7 +69,7 @@ As part of your interview, we request that you complete a technical exercise. Th
 
 1. Complete the problem in the language of your choosing.
 2. Upload your solution to [GitHub](https://github.com/).
-3. Use [TravisCI](https://travis-ci.org/) to show your tests pass.
+3. Use [GitHub Actions](https://github.com/nickolashkraus/dwolla/actions) to show your tests pass.
 
 **Your solution will be evaluated on:**
 

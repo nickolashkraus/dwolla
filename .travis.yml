@@ -1,9 +1,0 @@
-language: python
-sudo: required
-dist: bionic
-python: 3.7
-install:
-  - pip install -r requirements_dev.txt
-  - pip install -e .
-script: nosetests
-after_success: codecov

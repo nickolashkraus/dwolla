@@ -8,6 +8,7 @@ from .base import BaseTestCase
 
 
 class WeatherTestCase(BaseTestCase):
+
     def setUp(self):
         super(WeatherTestCase, self).setUp()
         self.runner = CliRunner()
@@ -33,8 +34,8 @@ class WeatherTestCase(BaseTestCase):
             cli, ['weather', '--coordinates', '41.85', '-87.65'])
         self.assertIs(None, result.exception)
         self.assertEqual(0, result.exit_code)
-        self.api.get_by_coordinates.assert_called_once_with(('41.85',
-                                                             '-87.65'))
+        self.api.get_by_coordinates.assert_called_once_with(
+            ('41.85', '-87.65'))
 
         # test zip option
         result = self.runner.invoke(cli, ['weather', '--zip', '60611'])

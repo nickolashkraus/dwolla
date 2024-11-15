@@ -12,7 +12,7 @@ class API(object):
         self.__dict__.update(kwargs)
 
     @classmethod
-    def _api_key(cls) -> dict:
+    def _api_key(cls) -> str:
         """
         Get the API key.
 
@@ -35,8 +35,9 @@ class OpenWeatherMapAPI(API):
     @property
     def url(cls) -> str:
         """URL of the OpenWeatherMap API."""
-        return '{protocol}://{domain}/{api_path}'.format(
-            protocol='https', domain=cls.DOMAIN, api_path=cls.API_PATH)
+        return '{protocol}://{domain}/{api_path}'.format(protocol='https',
+                                                         domain=cls.DOMAIN,
+                                                         api_path=cls.API_PATH)
 
     def _get(self, url: str) -> requests.Response:
         r = requests.get(url)

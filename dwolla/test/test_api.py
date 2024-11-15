@@ -6,15 +6,16 @@ from .base import BaseTestCase
 
 
 class APITestCase(BaseTestCase):
+
     def setUp(self):
         super(APITestCase, self).setUp()
 
     def test_init(self):
         expected = {'a': '1'}
-        self.assertEqual(expected, dict(
-            api.API(**{
-                'a': '1'
-            }).__dict__.items()))
+        self.assertEqual(expected,
+                         dict(api.API(**{
+                             'a': '1'
+                         }).__dict__.items()))
 
     @patch.dict(os.environ, {'API_KEY': '1337'})
     def test_api_key(self):
@@ -22,6 +23,7 @@ class APITestCase(BaseTestCase):
 
 
 class OpenWeatherMapAPITestCase(BaseTestCase):
+
     def setUp(self):
         super(OpenWeatherMapAPITestCase, self).setUp()
         self.mock_requests = patch.object(api, 'requests').start()
