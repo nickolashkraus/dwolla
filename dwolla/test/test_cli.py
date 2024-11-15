@@ -8,6 +8,7 @@ from .base import BaseTestCase
 
 
 class CliTestCase(BaseTestCase):
+
     def setUp(self):
         super(CliTestCase, self).setUp()
         self.runner = CliRunner()

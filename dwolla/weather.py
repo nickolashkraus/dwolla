@@ -9,10 +9,9 @@ from .api import OpenWeatherMapAPI
 @click.command()
 @click.option('--name', help='Name of the city')
 @click.option('--id', help='ID of the city')
-@click.option(
-    '--coordinates',
-    nargs=2,
-    help='Coordinates of the city (latitude and longitude)')
+@click.option('--coordinates',
+              nargs=2,
+              help='Coordinates of the city (latitude and longitude)')
 @click.option('--zip', help='Zip code of the city')
 def weather(*args, **kwargs) -> None:
     """

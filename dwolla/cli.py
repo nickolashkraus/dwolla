@@ -30,7 +30,8 @@ def configure_logging() -> None:
         log_handler = logging.FileHandler('logs.txt', mode='w')
         root_logger.addHandler(log_handler)
     except Exception as e:
-        print('Error configuring logs: {}'.format(e.message))
+        print('Error configuring logs: {}'.format(str(e)))
+        raise
 
 
 if __name__ == '__main__':

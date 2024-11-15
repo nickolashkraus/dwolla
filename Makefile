@@ -52,12 +52,12 @@ clean-test: ## remove test and coverage artifacts
 	rm -f logs.txt
 
 lint: ## check style with flake8
-	flake8 dwolla tests
+	flake8 dwolla
 
 format: ## format Python code and check complexity
 	@set -e; \
 	echo '' && echo 'YAPF formatter...' && \
-	yapf -ipr dwolla tests && echo 'Python complexity check...' && \
+	yapf -ipr dwolla && echo 'Python complexity check...' && \
 	mccabe_failed=0 && \
 	for f in $$(find $$(pwd)/dwolla/ -name '*.py';); do \
 		output=$$(python3 -m mccabe --min 6 "$$f") && \
@@ -70,17 +70,18 @@ format: ## format Python code and check complexity
 		echo '' && exit 1; \
 	fi && echo 'pydocstyle...' && echo '' && \
 	pydocstyle . && echo 'isort...' && \
-	isort -rc . && echo '' && \
+	isort . && echo '' && \
 	echo 'Format checks complete!' && echo ''
 
 test: ## run tests
-	nosetests . && exit 0 || \
+	pytest . && exit 0 || \
 	coverage report -m --fail-under=100 > /dev/null && exit 1
 
 coverage: ## check code coverage
-	@nosetests . && exit 0 || \
+	@pytest . && exit 0 || \
 	coverage report -m > /dev/null || coverage html; \
 	$(BROWSER) htmlcov/index.html
 
 deps: ## install dependencies
 	pip3 install -r requirements_dev.txt
+	pip install -e .

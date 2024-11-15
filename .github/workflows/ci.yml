@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - 'master'
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 'Set up Python'
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.13
+      - name: 'Install dependencies'
+        run: make deps
+      - name: 'Run static analysis'
+        run: make lint && make format
+      - name: 'Run tests'
+        run: make test
